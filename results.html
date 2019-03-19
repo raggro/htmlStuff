@@ -2,15 +2,16 @@
 
 {% block body %}
 
-<h2>{{ the_title}}</h2>
+<h2>{{ the_title }}</h2>
 
-<p>Sie haben die folgenden Daten übergeben:</p>
+<p>You submitted the following data:</p>
 <table>
-  <tr><td>Text:</td><td>{{ the_phrase }}</td></tr>
-  <tr><td>Buchstaben:</td><td>{{ the_letters }}</td></tr>
+<tr><td>Phrase:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>Letters:</td><td>{{ the_letters }}</td></tr>
 </table>
 
-<p>Die Suche in "{{the_phrase}}" nach "{{ the_letters }}"ergab folgendes Ergebnis:</p>
+<p>When "{{the_phrase }}" is search for "{{ the_letters }}", the following 
+results are returned:</p>
 <h3>{{ the_results }}</h3>
 
 {% endblock %}
